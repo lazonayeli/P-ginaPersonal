@@ -1,0 +1,221 @@
+/* Estilos generales */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+header {
+    background-color: #b7aeae;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+h1 {
+    color: white; /* Color del texto */
+    margin: 0; /* Eliminar margen superior e inferior */
+    background-color: hsla(23, 78%, 51%, 0.748); /* Color de fondo plomo */
+    padding: 5px; /* Añadir espacio alrededor del texto */
+}
+
+nav {
+    background-color: hsl(30, 2%, 20%);
+    padding: 10px 20px;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links li {
+    margin-right: 20px;
+    position: relative; /* Añadir posición relativa para elementos hijos */
+}
+
+.nav-links li:not(:last-child):after {
+    content: '';
+    position: absolute;
+    top: 50%; /* Alinear el centro verticalmente */
+    right: -10px; /* Ajustar la posición desde el borde derecho */
+    transform: translateY(-50%);
+    height: 20px;
+    width: 2px; /* Ancho del cuadro de separación */
+    background-color: rgb(245, 236, 235); /* Color de fondo negro */
+    box-shadow: 0 0 5px rgb(255, 255, 255); /* Añadir un efecto de brillo plateado */
+}
+
+.nav-links li a {
+    color: rgb(255, 255, 255); /* Color de las letras plateadas */
+    text-decoration: white;
+}
+
+.nav-links li a:hover {
+    text-decoration: underline; /* Efecto subrayado al pasar el mouse */
+}
+
+
+main {
+    padding: 20px;
+}
+
+
+
+section {
+    background-color:  hsl(30, 3%, 25%);/* Fondo negro */
+    color: rgb(228, 221, 221); /* Color de texto plateado */
+    margin: 10px;
+    padding: 20px;
+    border-radius: 0;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2), 0 0 0 2px silver; /* Sombra plateada en todos los bordes */
+}
+
+section h2 {
+    margin-top: 0;
+    color: rgb(255, 255, 255); /* Color de texto plateado */
+    border-bottom: 2px solid silver; /* Agregar borde plateado en la parte inferior */
+    padding-bottom: 5px; /* Espacio entre el texto y el borde */
+}
+
+
+section p, section li, section a {
+    color: rgb(255, 250, 250); /* Color de texto plateado */
+}
+
+section ul {
+    list-style-type: none; /* Quitar viñetas de lista */
+    padding: 0;
+    margin: 0;
+}
+
+section ul li {
+    margin-bottom: 10px; /* Espacio entre elementos de lista */
+}
+section a {
+    text-decoration: none; /* Quitar subrayado de enlaces */
+}
+
+section a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+}
+
+header {
+    background-image: url('imagenes/fondo1.avif'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    color: white; /* Color de texto para asegurar la legibilidad */
+    text-align: center; /* Alinea el contenido al centro */
+    padding: 100px 0; /* Añade un relleno arriba y abajo para centrar el contenido */
+}
+
+
+header {
+    background-color: #333; /* Color de fondo del encabezado */
+    color: #fff; /* Color del texto */
+    padding: 20px; /* Espaciado interno */
+}
+
+.header-content {
+    display: flex; /* Utiliza flexbox para alinear elementos */
+    align-items: center; /* Alinea verticalmente los elementos */
+}
+
+.perfil-img {
+    width: 200px; /* Ancho deseado para la imagen de perfil */
+    height: 300PX; /* Altura automática para mantener la proporción */
+    border-radius: 0; /* Elimina la forma circular */
+    margin-right: 20px; /* Espacio a la derecha de la imagen */
+}
+
+
+
+
+.botones-contacto button {
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 2px;
+    background-color: rgb(44, 43, 43); /* Fondo gris oscuro */
+    color: white; /* Texto blanco */
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.imagenes-container {
+    display: flex; /* Hace que los elementos hijos se muestren en línea */
+}
+
+.imagen {
+    width: 600px; /* Ancho deseado para cada imagen */
+    height: 300px; /* Altura automática para mantener la proporción */
+
+}
+
+
+#contacto {
+    padding: 20px; /* Espacio interior */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+}
+
+.formulario {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo semi-transparente */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+    margin-bottom: 20px; /* Espacio entre elementos del formulario */
+}
+
+label {
+    display: block; /* Mostrar etiquetas en una línea diferente */
+    margin-bottom: 5px; /* Espacio después de las etiquetas */
+    font-weight: bold; /* Texto en negrita */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    box-sizing: border-box; /* Incluir padding en el ancho total */
+}
+
+button[type="submit"] {
+    background-color: #434141d8; /* Color de fondo */
+    color: #ffffff; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Quitar borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambiar cursor al pasar el mouse */
+    transition: background-color 0.3s ease; /* Transición suave del color de fondo */
+}
+
+label[for="nombre"], /* Estilo para la etiqueta 'Nombre' */
+label[for="email"],
+label[for="asunto"], /* Estilo para la etiqueta 'Correo electrónico' */
+label[for="mensaje"] { /* Estilo para la etiqueta 'Mensaje' */
+    color: #4e4b4af2; /* Cambia el color del texto a un tono naranja */
+}
+
+.proyecto {
+    background-color: #615e5e; /* Color de fondo */
+    border: 1px solid #ccc; /* Borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 20px; /* Espacio interno */
+    margin-bottom: 20px; /* Margen inferior */
+}
+
+.proyecto img {
+    width: 50%; /* Imagen al 100% del contenedor */
+    border-radius: 5px; /* Bordes redondeados para la imagen */
+    margin-bottom: 10px; /* Margen inferior */
+}
+
